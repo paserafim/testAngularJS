@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <title>Learn AngularJS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+   
+<div class="container">
+   <div class="col-lg-12">
+      <div ng-controller="mainController">
+  
+<!--form name="myForm">
+ <label>
+  Enter text:
+ <input type="text" ng-model="field" name="myField" required minlength="5" />
+  </label>
+  <div ng-messages="myForm.myField.$error">
+      <div class="alert alert-danger" ng-message="required">You did not enter a field         </div>
+      <div class="alert alert-danger" ng-message="minlength">
+         The value entered is too short
+      </div>
+  </div>
+  </form>
+    <!--div>
+    <label for="">What is your twitter handle?</label>
+    <!--ng-model liga propriedades no $scope a este elemento-->
+        <!--input type="text" ng-model="handle" /-->
+    <!--/div-->
+    
+    <!--ng-if (elimina do DOM, (ng-show, ng-hide (estes apenas escondem)), ng-class (acrescenta css classes consoante condições) -->
+    <!--div class="alert" ng-if="handle.length !== characters">        
+        Must be 5 characters!.
+    </div>
+    <div class="alert" ng-class="{ 'alert-warning':handle.length < characters,'alert-danger':handle.length > characters }" ng-show ="handle.length !== characters">   
+       <div ng-show="handle.length < characters">
+           You have less than 5 characters!
+       </div>
+       <div ng-show="handle.length > characters">
+            You have more than 5 characters!
+       </div>
+        Must be 5 characters!.
+    </div>
+    
+    <hr/>
+            
+    <h1>twitter.com/{{ lowercasehandle() }}</h1>
+    
+    <h3>Rules</h3>
+    <ul>
+        <li ng-repeat="rule in rules">
+            {{rule.rulename}}
+        </li>
+    </ul-->
+       <!--input type="button" value="Click me" ng-click="alertClick()"/>        <br/-->
+       <!--ng-cloack esconde o elemento no DOM até o Angular ter trabalhado nele -->
+       <!--div ng-cloak>{{ name }}</div-->                                    <!-- 
+       <h3>Rules</h3>
+    <ul>
+        <li ng-repeat="rule in rules">
+            {{rule.rulename}}
+        </li>
+    </ul>
+           -->
+        <h1>{{name}}</h1>
+
+    <div ng-controller="secondController">
+        
+        <h3>{{name}}</h3>
+
+    </div>                                                                           
+                                                                                                                                                                   
+    </div>
+  </div>
+</div>
+
+
+
+<script src="js/jquery-1.11.3.min.js"></script>  
+<script src="js/bootstrap.min.js"></script>
+<script src="js/angular.min.js"></script>
+<!--script src="js/angular-messages.js"></script>
+<script src="js/angular-resource.js"></script-->
+<script src="js/app.js"></script>
+</body>
+</html>

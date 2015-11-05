@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <title>Learn AngularJS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+   
+<div class="container">
+   <div class="col-lg-12">
+     <label>Search</label>
+<input type="text" value="Doe"/>
+    
+<h3>Search Results</h3>
+<!--usar directive-->
+<div class="list-group">
+  <search-result person-object></search-result>
+  <!--search-result person-name="{{ person.name }}"--></search-result>
+
+</div>
+      <!--colocar aqui as páginas main e second -->
+      <!--div ng-view-->
+              
+    </div>
+  </div>
+</div>
+
+
+
+<script src="js/jquery-1.11.3.min.js"></script>  
+<script src="js/bootstrap.min.js"></script>
+<script src="js/angular.min.js"></script>
+<!--script src="js/angular-messages.js"></script>
+<script src="js/angular-resource.js"></script-->
+<script src="js/angular-route.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
